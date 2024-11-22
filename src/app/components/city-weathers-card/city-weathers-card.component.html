@@ -1,0 +1,7 @@
+<div class="app-component">
+    @if (cityWeathers) {
+        @for (cityWeather of cityWeathers; track cityWeather.id) {
+            <app-city-weather-card class="app-component__city-weather" [weather]="cityWeather"/>
+        }
+    }
+</div>

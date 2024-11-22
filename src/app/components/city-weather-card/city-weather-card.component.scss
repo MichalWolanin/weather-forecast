@@ -1,0 +1,42 @@
+@import "../../mixins.scss";
+
+.city-weather__component {
+    text-decoration: none;
+    color: black;
+
+    .city-weather__details {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        height: auto;
+        width: 200px;
+    }
+
+    @include desktop() {
+        .city-weather__details {
+            flex-direction: column;
+        }
+    }
+
+    .city-weather__details-name {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .city-weather__details-temp-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .city-weather__details-temp {
+        font-size: 36px;
+        font-weight: lighter;
+    }
+
+    .city-weather__details-description {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}

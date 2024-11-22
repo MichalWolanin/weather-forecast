@@ -1,0 +1,18 @@
+@import "./mixins.scss";
+
+.app-component {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    min-width: fit-content;
+    background-color: #dedede;
+    border-radius: 10px;
+}
+@include desktop() {
+    .app-component {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+    }
+}

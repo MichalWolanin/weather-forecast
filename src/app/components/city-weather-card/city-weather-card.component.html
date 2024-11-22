@@ -1,0 +1,10 @@
+<a href="https://openweathermap.org/city/{{ weather().id }}" target="_blank" class="city-weather__component">
+    <div class="city-weather__details">
+      <span class="city-weather__details-name">{{ weather().city }}</span>
+      <div class="city-weather__details-temp-container">
+        <img width="50" height="50" src="http://openweathermap.org/img/wn/{{ weather().icon }}@2x.png" alt="Weather icon">
+        <span class="city-weather__details-temp">{{ weather().temp | number:'1.0-0' }}°C</span>
+      </div>
+      <span class="city-weather__details-description">{{ weather().description }}</span>
+    </div>
+</a>
